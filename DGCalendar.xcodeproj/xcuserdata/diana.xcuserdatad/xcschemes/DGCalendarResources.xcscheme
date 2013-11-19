@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "844B2307183B1FA400C831B9"
-               BuildableName = "DGCalendarResources.bundle"
+               BuildableName = "DGCalendar.bundle"
                BlueprintName = "DGCalendarResources"
                ReferencedContainer = "container:DGCalendar.xcodeproj">
             </BuildableReference>
