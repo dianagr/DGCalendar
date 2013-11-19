@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "844B2307183B1FA400C831B9"
-               BuildableName = "DGCalendar.bundle"
-               BlueprintName = "DGCalendarResources"
-               ReferencedContainer = "container:DGCalendar.xcodeproj">
+               BlueprintIdentifier = "844B22CB183B197D00C831B9"
+               BuildableName = "libDGCalendarView.a"
+               BlueprintName = "DGCalendarView"
+               ReferencedContainer = "container:DGCalendarView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,6 +28,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "844B22DB183B197D00C831B9"
+               BuildableName = "DGCalendarViewTests.xctest"
+               BlueprintName = "DGCalendarViewTests"
+               ReferencedContainer = "container:DGCalendarView.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

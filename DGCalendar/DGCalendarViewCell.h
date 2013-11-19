@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DGDay : NSObject
+@interface DGCalendarViewCell : UIView
 
 @end

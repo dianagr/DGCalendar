@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Diana Gren. All rights reserved.
 //
 
-#import "DGDay.h"
+#import "DGCalendarViewCell.h"
 
-@implementation DGDay
+@implementation DGCalendarViewCell
 
 @end

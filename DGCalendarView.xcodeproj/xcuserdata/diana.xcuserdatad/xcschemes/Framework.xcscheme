@@ -17,7 +17,7 @@
                BlueprintIdentifier = "844B22FD183B1DBB00C831B9"
                BuildableName = "Framework"
                BlueprintName = "Framework"
-               ReferencedContainer = "container:DGCalendar.xcodeproj">
+               ReferencedContainer = "container:DGCalendarView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

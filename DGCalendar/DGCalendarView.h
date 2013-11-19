@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DGDay.h"
-@interface DGCalendar : NSObject
+
+@interface DGCalendarView : UIView
 
 @end
