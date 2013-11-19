@@ -1,5 +1,5 @@
 //
-//  DGCalendar.h
+//  DGDay.h
 //  DGCalendar
 //
 //  Created by Diana Gren on 11/18/13.
@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DGDay.h"
-@interface DGCalendar : NSObject
+
+@interface DGDay : NSObject
 
 @end
