@@ -32,14 +32,15 @@
 		844B22EC183B197E00C831B9 /* DGCalendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B22EB183B197E00C831B9 /* DGCalendarTests.m */; };
 		844B230A183B1FA400C831B9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B2309183B1FA400C831B9 /* CoreFoundation.framework */; };
 		844B2310183B1FA400C831B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 844B230E183B1FA400C831B9 /* InfoPlist.strings */; };
-		844B23A9183B3A0900C831B9 /* DGCalendarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 844B23A5183B3A0900C831B9 /* DGCalendarView.h */; };
+		844B23A9183B3A0900C831B9 /* DGCalendarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 844B23A5183B3A0900C831B9 /* DGCalendarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		844B23AA183B3A0900C831B9 /* DGCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B23A6183B3A0900C831B9 /* DGCalendarView.m */; };
 		844B23AB183B3A0900C831B9 /* DGCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B23A6183B3A0900C831B9 /* DGCalendarView.m */; };
 		844B23AC183B3A0900C831B9 /* DGCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B23A6183B3A0900C831B9 /* DGCalendarView.m */; };
-		844B23AD183B3A0900C831B9 /* DGCalendarViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 844B23A7183B3A0900C831B9 /* DGCalendarViewCell.h */; };
+		844B23AD183B3A0900C831B9 /* DGCalendarViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 844B23A7183B3A0900C831B9 /* DGCalendarViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		844B23AE183B3A0900C831B9 /* DGCalendarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B23A8183B3A0900C831B9 /* DGCalendarViewCell.m */; };
 		844B23AF183B3A0900C831B9 /* DGCalendarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B23A8183B3A0900C831B9 /* DGCalendarViewCell.m */; };
 		844B23B0183B3A0900C831B9 /* DGCalendarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B23A8183B3A0900C831B9 /* DGCalendarViewCell.m */; };
+		844B23B2183B3DBF00C831B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B23B1183B3DBF00C831B9 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +82,7 @@
 /* Begin PBXFileReference section */
 		844B22CC183B197D00C831B9 /* libDGCalendarView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDGCalendarView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		844B22CF183B197D00C831B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		844B22D3183B197D00C831B9 /* DGCalendarView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DGCalendarView-Prefix.pch"; sourceTree = "<group>"; };
+		844B22D3183B197D00C831B9 /* DGCalendarView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "DGCalendarView-Prefix.pch"; path = "../DGCalendarView/DGCalendarView-Prefix.pch"; sourceTree = "<group>"; };
 		844B22DC183B197D00C831B9 /* DGCalendarViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DGCalendarViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		844B22DD183B197D00C831B9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		844B22E0183B197E00C831B9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -93,10 +94,11 @@
 		844B230D183B1FA400C831B9 /* DGCalendarViewResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DGCalendarViewResources-Info.plist"; sourceTree = "<group>"; };
 		844B230F183B1FA400C831B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		844B2311183B1FA400C831B9 /* DGCalendarViewResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DGCalendarViewResources-Prefix.pch"; sourceTree = "<group>"; };
-		844B23A5183B3A0900C831B9 /* DGCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGCalendarView.h; sourceTree = "<group>"; };
-		844B23A6183B3A0900C831B9 /* DGCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGCalendarView.m; sourceTree = "<group>"; };
-		844B23A7183B3A0900C831B9 /* DGCalendarViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGCalendarViewCell.h; sourceTree = "<group>"; };
-		844B23A8183B3A0900C831B9 /* DGCalendarViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGCalendarViewCell.m; sourceTree = "<group>"; };
+		844B23A5183B3A0900C831B9 /* DGCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DGCalendarView.h; path = ../DGCalendarView/DGCalendarView.h; sourceTree = "<group>"; };
+		844B23A6183B3A0900C831B9 /* DGCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DGCalendarView.m; path = ../DGCalendarView/DGCalendarView.m; sourceTree = "<group>"; };
+		844B23A7183B3A0900C831B9 /* DGCalendarViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DGCalendarViewCell.h; path = ../DGCalendarView/DGCalendarViewCell.h; sourceTree = "<group>"; };
+		844B23A8183B3A0900C831B9 /* DGCalendarViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DGCalendarViewCell.m; path = ../DGCalendarView/DGCalendarViewCell.m; sourceTree = "<group>"; };
+		844B23B1183B3DBF00C831B9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844B23B2183B3DBF00C831B9 /* UIKit.framework in Frameworks */,
 				844B22D0183B197D00C831B9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,9 +136,9 @@
 		844B22C3183B197D00C831B9 = {
 			isa = PBXGroup;
 			children = (
-				844B22D1183B197D00C831B9 /* DGCalendar */,
-				844B22E5183B197E00C831B9 /* DGCalendarTests */,
-				844B230B183B1FA400C831B9 /* DGCalendarResources */,
+				844B22D1183B197D00C831B9 /* DGCalendarView */,
+				844B22E5183B197E00C831B9 /* DGCalendarViewTests */,
+				844B230B183B1FA400C831B9 /* DGCalendarViewResources */,
 				844B22CE183B197D00C831B9 /* Frameworks */,
 				844B22CD183B197D00C831B9 /* Products */,
 			);
@@ -154,6 +157,7 @@
 		844B22CE183B197D00C831B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				844B23B1183B3DBF00C831B9 /* UIKit.framework */,
 				844B22CF183B197D00C831B9 /* Foundation.framework */,
 				844B22DD183B197D00C831B9 /* XCTest.framework */,
 				844B22E0183B197E00C831B9 /* UIKit.framework */,
@@ -162,7 +166,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		844B22D1183B197D00C831B9 /* DGCalendar */ = {
+		844B22D1183B197D00C831B9 /* DGCalendarView */ = {
 			isa = PBXGroup;
 			children = (
 				844B23A5183B3A0900C831B9 /* DGCalendarView.h */,
@@ -171,6 +175,7 @@
 				844B23A8183B3A0900C831B9 /* DGCalendarViewCell.m */,
 				844B22D2183B197D00C831B9 /* Supporting Files */,
 			);
+			name = DGCalendarView;
 			path = DGCalendar;
 			sourceTree = "<group>";
 		};
@@ -182,13 +187,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		844B22E5183B197E00C831B9 /* DGCalendarTests */ = {
+		844B22E5183B197E00C831B9 /* DGCalendarViewTests */ = {
 			isa = PBXGroup;
 			children = (
 				844B22EB183B197E00C831B9 /* DGCalendarTests.m */,
 				844B22E6183B197E00C831B9 /* Supporting Files */,
 			);
-			path = DGCalendarTests;
+			path = DGCalendarViewTests;
 			sourceTree = "<group>";
 		};
 		844B22E6183B197E00C831B9 /* Supporting Files */ = {
@@ -200,12 +205,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		844B230B183B1FA400C831B9 /* DGCalendarResources */ = {
+		844B230B183B1FA400C831B9 /* DGCalendarViewResources */ = {
 			isa = PBXGroup;
 			children = (
 				844B230C183B1FA400C831B9 /* Supporting Files */,
 			);
-			path = DGCalendarResources;
+			path = DGCalendarViewResources;
 			sourceTree = "<group>";
 		};
 		844B230C183B1FA400C831B9 /* Supporting Files */ = {
@@ -225,8 +230,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				844B23AD183B3A0900C831B9 /* DGCalendarViewCell.h in Headers */,
 				844B23A9183B3A0900C831B9 /* DGCalendarView.h in Headers */,
+				844B23AD183B3A0900C831B9 /* DGCalendarViewCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,9 +514,9 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
-				DSTROOT = /tmp/DGCalendar.dst;
+				DSTROOT = /tmp/DGCalendarView.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DGCalendar/DGCalendarView-Prefix.pch";
+				GCC_PREFIX_HEADER = "DGCalendarView/DGCalendarView-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)/**",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -531,9 +536,9 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
-				DSTROOT = /tmp/DGCalendar.dst;
+				DSTROOT = /tmp/DGCalendarView.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DGCalendar/DGCalendarView-Prefix.pch";
+				GCC_PREFIX_HEADER = "DGCalendarView/DGCalendarView-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)/**",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -605,12 +610,12 @@
 			buildSettings = {
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DGCalendarResources/DGCalendarViewResources-Prefix.pch";
+				GCC_PREFIX_HEADER = "$(TARGET_NAME)/DGCalendarViewResources-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "DGCalendarResources/DGCalendarViewResources-Info.plist";
+				INFOPLIST_FILE = "$(TARGET_NAME)/DGCalendarViewResources-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = NO;
@@ -625,8 +630,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DGCalendarResources/DGCalendarViewResources-Prefix.pch";
-				INFOPLIST_FILE = "DGCalendarResources/DGCalendarViewResources-Info.plist";
+				GCC_PREFIX_HEADER = "$(TARGET_NAME)/DGCalendarViewResources-Prefix.pch";
+				INFOPLIST_FILE = "$(TARGET_NAME)/DGCalendarViewResources-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = NO;
