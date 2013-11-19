@@ -175,8 +175,7 @@
 				844B23A8183B3A0900C831B9 /* DGCalendarViewCell.m */,
 				844B22D2183B197D00C831B9 /* Supporting Files */,
 			);
-			name = DGCalendarView;
-			path = DGCalendar;
+			path = DGCalendarView;
 			sourceTree = "<group>";
 		};
 		844B22D2183B197D00C831B9 /* Supporting Files */ = {
@@ -615,6 +614,11 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/**",
+				);
 				INFOPLIST_FILE = "$(TARGET_NAME)/DGCalendarViewResources-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
@@ -631,6 +635,11 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(TARGET_NAME)/DGCalendarViewResources-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/**",
+				);
 				INFOPLIST_FILE = "$(TARGET_NAME)/DGCalendarViewResources-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;

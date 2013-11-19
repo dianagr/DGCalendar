@@ -12,14 +12,29 @@
 
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        _titleLabel = [[UILabel alloc] init];
-        _titleLabel.text = @"This is a label";
-        [self addSubview:_titleLabel];
-        
-        _subtitleLabel = [[UILabel alloc] init];
-        [self addSubview:_subtitleLabel];
+        [self sharedInit];
     }
     return self;
+}
+
+- (id)init {
+    if (self = [super init]) {
+        [self sharedInit];
+    }
+    return self;
+}
+
+- (void)sharedInit {
+    _titleLabel = [[UILabel alloc] init];
+    _titleLabel.text = @"This is a label";
+    _titleLabel.adjustsFontSizeToFitWidth = YES;
+    [self addSubview:_titleLabel];
+
+    _subtitleLabel = [[UILabel alloc] init];
+    [self addSubview:_subtitleLabel];
+
+    self.backgroundColor = [UIColor lightGrayColor];
+    self.layer.cornerRadius = 5.0;
 }
 
 - (void)layoutSubviews {
