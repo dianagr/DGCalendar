@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>DGCalendarResources.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>Framework.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -28,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>844B22FD183B1DBB00C831B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>844B2307183B1FA400C831B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

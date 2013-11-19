@@ -14,6 +14,7 @@
 				844B2303183B1DEA00C831B9 /* ShellScript */,
 			);
 			dependencies = (
+				844B2316183B20F000C831B9 /* PBXTargetDependency */,
 				844B2302183B1DC200C831B9 /* PBXTargetDependency */,
 			);
 			name = Framework;
@@ -35,6 +36,8 @@
 		844B22F8183B1A5500C831B9 /* DGDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B22F6183B1A5500C831B9 /* DGDay.m */; };
 		844B22FA183B1BB300C831B9 /* DGCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B22D6183B197D00C831B9 /* DGCalendar.m */; };
 		844B22FB183B1BE500C831B9 /* DGCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 844B22D4183B197D00C831B9 /* DGCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		844B230A183B1FA400C831B9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B2309183B1FA400C831B9 /* CoreFoundation.framework */; };
+		844B2310183B1FA400C831B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 844B230E183B1FA400C831B9 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 844B22CB183B197D00C831B9;
 			remoteInfo = DGCalendar;
+		};
+		844B2315183B20F000C831B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 844B22C4183B197D00C831B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 844B2307183B1FA400C831B9;
+			remoteInfo = DGCalendarResources;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -81,6 +91,11 @@
 		844B22EB183B197E00C831B9 /* DGCalendarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGCalendarTests.m; sourceTree = "<group>"; };
 		844B22F5183B1A5500C831B9 /* DGDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGDay.h; sourceTree = "<group>"; };
 		844B22F6183B1A5500C831B9 /* DGDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGDay.m; sourceTree = "<group>"; };
+		844B2308183B1FA400C831B9 /* DGCalendar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DGCalendar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		844B2309183B1FA400C831B9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		844B230D183B1FA400C831B9 /* DGCalendarResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DGCalendarResources-Info.plist"; sourceTree = "<group>"; };
+		844B230F183B1FA400C831B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		844B2311183B1FA400C831B9 /* DGCalendarResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DGCalendarResources-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +118,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		844B2305183B1FA400C831B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844B230A183B1FA400C831B9 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -111,6 +134,7 @@
 			children = (
 				844B22D1183B197D00C831B9 /* DGCalendar */,
 				844B22E5183B197E00C831B9 /* DGCalendarTests */,
+				844B230B183B1FA400C831B9 /* DGCalendarResources */,
 				844B22CE183B197D00C831B9 /* Frameworks */,
 				844B22CD183B197D00C831B9 /* Products */,
 			);
@@ -121,6 +145,7 @@
 			children = (
 				844B22CC183B197D00C831B9 /* libDGCalendar.a */,
 				844B22DC183B197D00C831B9 /* DGCalendarTests.xctest */,
+				844B2308183B1FA400C831B9 /* DGCalendar.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +156,7 @@
 				844B22CF183B197D00C831B9 /* Foundation.framework */,
 				844B22DD183B197D00C831B9 /* XCTest.framework */,
 				844B22E0183B197E00C831B9 /* UIKit.framework */,
+				844B2309183B1FA400C831B9 /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,6 +195,24 @@
 			children = (
 				844B22E7183B197E00C831B9 /* DGCalendarTests-Info.plist */,
 				844B22E8183B197E00C831B9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		844B230B183B1FA400C831B9 /* DGCalendarResources */ = {
+			isa = PBXGroup;
+			children = (
+				844B230C183B1FA400C831B9 /* Supporting Files */,
+			);
+			path = DGCalendarResources;
+			sourceTree = "<group>";
+		};
+		844B230C183B1FA400C831B9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				844B230D183B1FA400C831B9 /* DGCalendarResources-Info.plist */,
+				844B230E183B1FA400C831B9 /* InfoPlist.strings */,
+				844B2311183B1FA400C831B9 /* DGCalendarResources-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -224,6 +268,23 @@
 			productReference = 844B22DC183B197D00C831B9 /* DGCalendarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		844B2307183B1FA400C831B9 /* DGCalendarResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 844B2312183B1FA400C831B9 /* Build configuration list for PBXNativeTarget "DGCalendarResources" */;
+			buildPhases = (
+				844B2304183B1FA400C831B9 /* Sources */,
+				844B2305183B1FA400C831B9 /* Frameworks */,
+				844B2306183B1FA400C831B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DGCalendarResources;
+			productName = DGCalendarResources;
+			productReference = 844B2308183B1FA400C831B9 /* DGCalendar.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -248,6 +309,7 @@
 				844B22CB183B197D00C831B9 /* DGCalendar */,
 				844B22DB183B197D00C831B9 /* DGCalendarTests */,
 				844B22FD183B1DBB00C831B9 /* Framework */,
+				844B2307183B1FA400C831B9 /* DGCalendarResources */,
 			);
 		};
 /* End PBXProject section */
@@ -258,6 +320,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				844B22EA183B197E00C831B9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844B2306183B1FA400C831B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844B2310183B1FA400C831B9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +383,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		844B2304183B1FA400C831B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -326,6 +403,11 @@
 			target = 844B22CB183B197D00C831B9 /* DGCalendar */;
 			targetProxy = 844B2301183B1DC200C831B9 /* PBXContainerItemProxy */;
 		};
+		844B2316183B20F000C831B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 844B2307183B1FA400C831B9 /* DGCalendarResources */;
+			targetProxy = 844B2315183B20F000C831B9 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -333,6 +415,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				844B22E9183B197E00C831B9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		844B230E183B1FA400C831B9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844B230F183B1FA400C831B9 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -496,6 +586,41 @@
 			};
 			name = Release;
 		};
+		844B2313183B1FA400C831B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DGCalendarResources/DGCalendarResources-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DGCalendarResources/DGCalendarResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		844B2314183B1FA400C831B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DGCalendarResources/DGCalendarResources-Prefix.pch";
+				INFOPLIST_FILE = "DGCalendarResources/DGCalendarResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -529,6 +654,14 @@
 			buildConfigurations = (
 				844B22FF183B1DBB00C831B9 /* Debug */,
 				844B2300183B1DBB00C831B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		844B2312183B1FA400C831B9 /* Build configuration list for PBXNativeTarget "DGCalendarResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844B2313183B1FA400C831B9 /* Debug */,
+				844B2314183B1FA400C831B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
