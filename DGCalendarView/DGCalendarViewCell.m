@@ -8,6 +8,11 @@
 
 #import "DGCalendarViewCell.h"
 
+@interface DGCalendarViewCell ()
+@property (assign, nonatomic, getter = isMoving) BOOL moving;
+@property (assign, nonatomic) NSInteger oldX;
+@property (assign, nonatomic) NSInteger oldY;
+@end
 @implementation DGCalendarViewCell
 
 - (id)initWithFrame:(CGRect)frame {
@@ -43,4 +48,30 @@
     _subtitleLabel.frame = CGRectMake(10, self.frame.size.height - 10, self.frame.size.width - 20, labelSize.height);
 }
 
+#pragma mark Touch and Pan
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [[event allTouches] anyObject];
+    CGPoint touchLocation = [touch locationInView:self];
+    if (CGRectContainsPoint(self.bounds, touchLocation)) {
+        self.moving = YES;
+        self.oldX = touchLocation.x;
+        self.oldY = touchLocation.y;
+    }
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [[event allTouches] anyObject];
+    CGPoint touchLocation = [touch locationInView:self];
+    if (self.isMoving) {
+        CGRect frame = self.frame;
+        frame.origin.x = self.frame.origin.x + touchLocation.x - self.oldX;
+        frame.origin.y =  self.frame.origin.y + touchLocation.y - self.oldY;
+        self.frame = frame;
+    }
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    self.moving = NO;
+}
 @end
