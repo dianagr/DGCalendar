@@ -10,8 +10,7 @@
 
 @interface DGCalendarViewCell ()
 @property (assign, nonatomic, getter = isMoving) BOOL moving;
-@property (assign, nonatomic) NSInteger oldX;
-@property (assign, nonatomic) NSInteger oldY;
+@property (assign, nonatomic) CGPoint oldLocation;
 @end
 @implementation DGCalendarViewCell
 
@@ -51,23 +50,24 @@
 #pragma mark Touch and Pan
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    UITouch *touch = [[event allTouches] anyObject];
-    CGPoint touchLocation = [touch locationInView:self];
+    CGPoint touchLocation = [[[event allTouches] anyObject] locationInView:self];
     if (CGRectContainsPoint(self.bounds, touchLocation)) {
         self.moving = YES;
-        self.oldX = touchLocation.x;
-        self.oldY = touchLocation.y;
+        self.oldLocation = CGPointMake(touchLocation.x, touchLocation.y);
     }
 }
 
+- (void)_move:(CGPoint)touchLocation {
+    CGRect frame = self.frame;
+    frame.origin.x = self.frame.origin.x + touchLocation.x - self.oldLocation.x;
+    frame.origin.y =  self.frame.origin.y + touchLocation.y - self.oldLocation.y;
+    self.frame = frame;
+}
+
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-    UITouch *touch = [[event allTouches] anyObject];
-    CGPoint touchLocation = [touch locationInView:self];
+    CGPoint touchLocation = [[[event allTouches] anyObject] locationInView:self];
     if (self.isMoving) {
-        CGRect frame = self.frame;
-        frame.origin.x = self.frame.origin.x + touchLocation.x - self.oldX;
-        frame.origin.y =  self.frame.origin.y + touchLocation.y - self.oldY;
-        self.frame = frame;
+        [self _move:touchLocation];
     }
 }
 
