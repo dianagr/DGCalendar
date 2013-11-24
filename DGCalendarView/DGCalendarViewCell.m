@@ -11,6 +11,7 @@
 @interface DGCalendarViewCell ()
 @property (assign, nonatomic, getter = isMoving) BOOL moving;
 @property (assign, nonatomic) CGPoint oldLocation;
+@property (assign, nonatomic) NSInteger step;
 @end
 @implementation DGCalendarViewCell
 
@@ -29,6 +30,7 @@
 }
 
 - (void)sharedInit {
+    self.step = 1;
     _titleLabel = [[UILabel alloc] init];
     _titleLabel.text = @"This is a label";
     _titleLabel.adjustsFontSizeToFitWidth = YES;
@@ -58,10 +60,10 @@
 }
 
 - (void)_move:(CGPoint)touchLocation {
-    CGRect frame = self.frame;
-    frame.origin.x = self.frame.origin.x + touchLocation.x - self.oldLocation.x;
-    frame.origin.y =  self.frame.origin.y + touchLocation.y - self.oldLocation.y;
-    self.frame = frame;
+    CGPoint newCenter;
+    newCenter.x = self.step * floorf((self.center.x + touchLocation.x - self.oldLocation.x) / self.step + 0.5);
+    newCenter.y = self.step * floor((self.center.y + touchLocation.y - self.oldLocation.y) / self.step + 0.5);
+    self.center = newCenter;
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
