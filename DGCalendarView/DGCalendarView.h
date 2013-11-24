@@ -11,9 +11,10 @@
 @class DGCalendarView;
 @class DGCalendarViewCell;
 @protocol DGCalendarViewDataSource <NSObject>
+@optional
+- (NSInteger)numberOfSectionsInCalendarView:(DGCalendarView *)calendarView;
 @required
 - (DGCalendarViewCell *)calendarView:(DGCalendarView *)calendarView cellForItemAtIndexPath:(NSIndexPath *)indexPath;
-- (NSInteger)numberOfSectionsInCalendarView:(DGCalendarView *)calendarView;
 - (NSInteger)calendarView:(DGCalendarView *)calendarView numberOfItemsInSection:(NSInteger)section;
 @end
 
