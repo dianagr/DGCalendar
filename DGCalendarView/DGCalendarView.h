@@ -8,17 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+#import "NSIndexPath+DGCalendarView.h"
+#import "DGCalendarViewCell.h"
+
 @class DGCalendarView;
 @class DGCalendarViewCell;
 @protocol DGCalendarViewDataSource <NSObject>
 @optional
 - (NSInteger)numberOfSectionsInCalendarView:(DGCalendarView *)calendarView;
 @required
-- (DGCalendarViewCell *)calendarView:(DGCalendarView *)calendarView cellForItemAtIndexPath:(NSIndexPath *)indexPath;
-- (NSInteger)calendarView:(DGCalendarView *)calendarView numberOfItemsInSection:(NSInteger)section;
+- (DGCalendarViewCell *)calendarView:(DGCalendarView *)calendarView cellForEventAtIndexPath:(NSIndexPath *)indexPath;
+- (NSInteger)calendarView:(DGCalendarView *)calendarView numberOfEventsInDay:(NSInteger)section;
 @end
 
 @interface DGCalendarView : UIView
 
 @property (weak, nonatomic) id<DGCalendarViewDataSource> dataSource;
+
+@property (strong, nonatomic) UIView *contentView;
 @end

@@ -13,6 +13,10 @@ typedef enum {
 } DGCalendarViewCellStyle;
 
 @interface DGCalendarViewCell : UIView
+
+@property (retain, nonatomic) UIView *contentView;
+
 @property (retain, nonatomic) UILabel *titleLabel;
 @property (retain, nonatomic) UILabel *subtitleLabel;
+
 @end

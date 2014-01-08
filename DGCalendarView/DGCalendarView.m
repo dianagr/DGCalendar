@@ -33,9 +33,12 @@
 }
 
 - (void)sharedInit {
-    UIView *yAxis = [[UIView alloc] initWithFrame:CGRectMake(self.frame.origin.x+10, self.frame.origin.y + 20.0, 1.0, self.frame.size.height - 30.0)];
+    _contentView = [[UIView alloc] init];
+    [self addSubview:_contentView];
+
+    UIView *yAxis = [[UIView alloc] initWithFrame:CGRectMake(_contentView.frame.origin.x, _contentView.frame.origin.y, 1.0, _contentView.frame.size.height)];
     yAxis.backgroundColor = [UIColor darkGrayColor];
-    [self addSubview:yAxis];
+    [self.contentView addSubview:yAxis];
 
     self.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.5];
 }
@@ -44,9 +47,10 @@
     CGFloat y = 10.0;
     CGFloat x = 10.0;
 
+    self.contentView.frame = CGRectMake(self.frame.origin.x + 10, self.frame.origin.y + 20, self.frame.size.width - 20.0, self.frame.size.height - 30.0);
     NSInteger items = [self _numberOfItems];
     for (int i = 0; i < items; ++i) {
-        DGCalendarViewCell *cell = [self.dataSource calendarView:self cellForItemAtIndexPath:nil];
+        DGCalendarViewCell *cell = [self.dataSource calendarView:self cellForEventAtIndexPath:[NSIndexPath indexPathForEvent:i inDay:0]];
         cell.frame = CGRectMake(x, y, 100, 100);
         [self addSubview:cell];
         y = CGRectGetMaxY(cell.frame) + 10;
@@ -54,8 +58,8 @@
 }
 
 - (NSInteger)_numberOfItems {
-    if ([self.dataSource respondsToSelector:@selector(calendarView:numberOfItemsInSection:)]) {
-        return [self.dataSource calendarView:self numberOfItemsInSection:0];
+    if ([self.dataSource respondsToSelector:@selector(calendarView:numberOfEventsInDay:)]) {
+        return [self.dataSource calendarView:self numberOfEventsInDay:0];
     }
     return 0;
 }
